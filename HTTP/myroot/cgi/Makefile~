@@ -1,0 +1,5 @@
+insert:insert.c
+	gcc -o insert insert.c -I./../mysql_lib/include -L./../mysql_lib/lib -lmysqlclient
+.PHONY:clean
+clean:
+	rm -f insert
